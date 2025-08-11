@@ -1,0 +1,14 @@
+@model Tarea_3.Models.masct
+@{
+    ViewData["Title"] = "Registro Mascota";
+}
+<h2>Registro de Mascota</h2>
+<form asp-action="registro" method="post">
+    <label>Nombre:</label>
+    <input asp-for="nom" required maxlength="20" /><br />
+    <label>Especie:</label>
+    <input asp-for="esp" required maxlength="20" /><br />
+    <label>Edad:</label>
+    <input asp-for="edad" type="number" required min="0" /><br />
+    <button type="submit">Registrar</button>
+</form>
