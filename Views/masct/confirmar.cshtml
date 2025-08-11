@@ -1,0 +1,10 @@
+@model Tarea_3.Models.masct
+@{
+    ViewData["Title"] = "Confirmación";
+}
+<h2>Mascota Registrada</h2>
+<p>Nombre: @Model.nom</p>
+<p>Especie: @Model.esp</p>
+<p>Edad: @Model.edad</p>
+<a asp-action="registro">Registrar otra</a>
+
